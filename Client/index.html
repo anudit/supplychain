@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <h1>Register Product:</h1>
+        <img src="#" id="qr">
+        <p id="returnPID"></p>
+        <form action="" method="" id="formRegisterProduct">
+            Eth Address:
+            <input type="text" name="formAddress" id="formAddress" value="0x707aC3937A9B31C225D8C240F5917Be97cab9F20">
+            <br />Name :
+            <input type="text" name="formName" id="formName" value="Water Bottle">
+            <br />Company :
+            <input type="text" name="formCompany" id="formCompany" value="TupperWare">
+            <br />Place :
+            <input type="text" name="formPlace" id="formPlace" value="Noida">
+            <br />
+            <button id="formRegisterProductSubmit">leggo</button>
+        </form>
+        <hr>
+
+        <h1>Sell Product:</h1>
+        <form action="" method="" id="formSellProduct">
+            PID :
+            <input type="text" name="formSellPID" id="formSellPID" value="0x55503635435730303037">
+            <br />
+            <input type="submit" id="formSellProductSubmit"/>
+        </form>
+        <hr>
+        
+        <h1>Check PID:</h1>
+            <input type="text" name="checkPID" id="checkPID" value="0x55503635435730303037">
+            <br />
+            <button id="btnCheckPID">GET</button>
+        <hr>
+        
+        <h1>Get No. of PIDs Registered:</h1>
+            <p id="getPIDLength"></p>
+            <button id="btnGetPIDLength">GET</button>
+        <hr>
+
+        <h1>Get All PIDs Registered:</h1>
+            <ul id="allPIDList">
+            </ul>
+            <button id="btnGetAllPID">GET</button>
+        <hr>
+
+        <h1>Get Product Details:</h1>
+            <input type="text" name="getDetailsPID" id="getDetailsPID" value="0x55503635435730303037">
+            <br />
+            <button id="btnGetProductDetails">GET</button>
+        <hr>
+
+        <h1>Details:</h1>
+        <div id="details">
+            <p>Address : <span id="address"></span></p>
+            <p>Product ID : <span id="pid"></span></p>
+            <p>Name : <span id="name"></span></p>
+            <p>Company : <span id="comapany"></span></p>
+            <p>Date : <span id="dd"></span>/<span id="mm"></span>/<span id="yyyy"></span></p>
+            <p>Place : <span id="place"></span></p>
+            <p>Status : <span id="status"></span></p>
+            <p>Events : <span id="events"></span></p>
+        </div>
+        <p id="result"></p>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/main.js" charset="utf-8"></script>
+</html>

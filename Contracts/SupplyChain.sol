@@ -1,5 +1,6 @@
-pragma solidity ^0.5.2;
+ pragma solidity ^0.5.2;
 pragma experimental ABIEncoderV2;
+
 
 contract SupplyChain {
     
@@ -20,7 +21,7 @@ contract SupplyChain {
     struct ProdEvent {
 	    address ethadd;
 	    string dd;
-	    string mm;
+	    string mm; 
 	    string yyyy;
 	    bytes8 lat;
 	    bytes8 lon;
@@ -74,10 +75,10 @@ contract SupplyChain {
         emit productSold(_pid,  productList[_pid].company,  productList[_pid].name);
     }
     
-    function getProductDetails(bytes32 _id) public view returns(address, bytes32, string memory, string memory, string memory, string memory, string memory, string memory, ProdEvent memory, uint8){
+    function getProductDetails(bytes32 _id) public view returns(address, bytes32, string memory, string memory, string memory, string memory, string memory, string memory, uint8){
         require(isValidPID(_id));
         Product memory p = productList[_id];
-        return (p.ethadd, p.pid, p.events.dd, p.events.mm, p.events.yyyy, p.company, p.name, p.place, p.events, p.status);
+        return (p.ethadd, p.pid, p.events.dd, p.events.mm, p.events.yyyy, p.company, p.name, p.place, p.status);
     }
     
     function getPIDLength() public view returns(uint256){
